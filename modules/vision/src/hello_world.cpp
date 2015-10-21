@@ -1,15 +1,17 @@
-#include "opencv2/imgcodecs.hpp"
-#include "opencv2/highgui.hpp"
-#include "opencv2/imgproc.hpp"
-#include "opencv2/core/utility.hpp"
+//#include "opencv2/imgcodecs.hpp"
+//#include "opencv2/highgui/highgui.hpp"
+//#include "opencv2/imgproc.hpp"
+//#include "opencv2/core/utility.hpp"
 
-#include "opencv2/highgui/highgui_c.h"
+//#include "opencv2/highgui/highgui_c.h"
+#include "opencv2/opencv.hpp"
+
 
 #include <stdio.h>
 
 #include <iostream>
 
-#include "opencv2/core.hpp"
+//#include "opencv2/core.hpp"
 
 using namespace std;
 using namespace cv;
@@ -26,7 +28,8 @@ int main(int argc, char** argv )
 	printf ("%f\n",my_mat(0,1));
 	
 
-	cap.open(0);    
+	cap.open(-1);
+	printf ("0");    
     if (!cap.isOpened())
     {
     	cerr << "Couldn't open camera" << endl;
