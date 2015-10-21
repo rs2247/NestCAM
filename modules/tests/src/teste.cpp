@@ -10,7 +10,7 @@ int main( int argc, char** argv ) {
 		return -1;
 	}
 	cv::Mat img = cv::imread(argv[1], -1);
-	if(img.empty()) { 
+	if(img.empty()) {
 		return -1;
 	}
 	cv::namedWindow("Example2", cv::WINDOW_AUTOSIZE);
